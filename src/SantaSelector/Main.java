@@ -17,6 +17,6 @@ public class Main {
 		
 		ArrayList<Santa> test= Santa.randomSelector();
 		
-		System.out.println(test.get(0));
+		System.out.println(test.get(0).getGiftee());
 	}
 }

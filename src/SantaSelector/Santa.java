@@ -94,7 +94,11 @@ public class Santa {
 	///////////////////////////////
 	
 	public static boolean hasPotentialGiftee(Santa s, ArrayList<Santa> a) {
-		// TODO
+		for (Santa i : a) {
+			if (i.getName() != s.getName() || i.getName() != s.getPartner() || i.getPrevious() != s.getName()) {
+				return true;
+			}
+		}
 		return false;
 	}
 	
